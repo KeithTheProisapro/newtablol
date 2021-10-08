@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keith'sNew Tab</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<link rel='icon' href='https://i.pinimg.com/originals/15/6a/86/156a86c143634a2e444b673a7b373b46.jpg
+' sizes='32x32'>
+	<style>
+		body{
+			background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg?crop=1.00xw:0.752xh;0,0.0601xh&resize=980:*");
+			background-size: cover; 
+		}
+		#diver{
+		text-align: center;
+		rgba:255,255,255.0.5;
+		}
+		#vf{
+			width: 300px;
+			height:40px;
+		}
+		button{
+			width:40px;
+			height:40px;
+			}
+		#lister>li{
+			font-family: 'Roboto', sans-serif;
+			background-color: #7fffd4;
+			font-weight: bold;
+			padding: 10px 20px;
+			margin: 10px auto;
+			border-radius: 211px;
+			width: 500px
+		}
+		#listheading{
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			text-decoration-color: aquamarine;
+			color: white;
+
+
+		}
+		#useful{
+			font-family: 'Roboto', sans-serif;
+			text-align: left;
+			text-decoration-color: aquamarine;
+			color: aquamarine;
+		}
+		#links{
+			text-align: left;
+			padding: 10px 20px;
+			margin: 10px 20px;
+			border-radius: 211px;
+			width: 500px
+			
+		}
+
+		
+
+		#plsmeme>li{
+			float: none;
+			background-color: none;
+			width: 7%;
+		}
+		#plsmeme>li>a:hover{
+			color: yellow;
+			
+		}
+		#plsmeme>li{
+			transition: 0.2s
+		}
+		
+		iframe{
+			margin-left: 165px;
+			margin-top: 60px;
+
+		}
+		#dailybullet{
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			
+		}
+		
+		#arrowshoot{
+			margin-bottom: 50px;
+			margin-left: 650px;
+		}
+
+	</style>
+<body>
+	<h1 id="useful">Useful Links</h1>
+	<div id="links">
+	<img id="classroom" width="40" src="https://img.icons8.com/color/48/000000/google-classroom.png" alt="Google classroom">
+	<img id="Onenote" width="40" src="https://img.icons8.com/color/48/000000/microsoft-onenote-2019.png" alt="Onenote">	
+	<img  id="eclass" width="40" src="https://img.icons8.com/dusk/64/000000/google-news.png" alt="Eclass2.0">
+	<img  id="google" width="40" src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Eclass2.0">
+	<img  id="science" width="40" src="https://www.vhv.rs/dpng/f/470-4705507_flask-png.png">
+	</div>
+	<div id="diver">
+		<h1 id="listheading">My to do list</h1>
+		<input type="text" id="vf" name="textboxx" id="dac">
+		<button id="addtask">+</button>
+		<ul id="lister" style="list-style-type:none;">
+		
+		</ul>
+	</div>
+	<script>
+		$(document).ready(function(){
+
+		})
+		$('#classroom').click(function(){
+   window.location.href='https://classroom.google.com';
+})
+				$('#Onenote').click(function(){
+   window.location.href='https://www.onenote.com/';
+})
+				$('#eclass').click(function(){
+   window.location.href='https://news.google.com/';
+})
+				$('#google').click(function(){
+   window.location.href='https://google.com';
+})
+				$('#science').click(function(){
+   window.location.href='https://docs.google.com/document/d/1WeLCvWdsxu8aVNB8fcslO8JXq8FDip4JUDWEWI3Idgo/edit';
+})
+		$("#addtask").click(function(){
+			var tf = $("input[name='textboxx']").val()
+			
+			
+			if (tf=="") {
+				alert("Please enter a task")
+			}
+			else{
+				$("ul").append("<li><input type='checkbox'>"+tf+"</li>");
+				$("#vf").val("");
+			}
+
+		})
+		// $("input[type='checkbox']").click(function(){
+		// 	$(this).parent()
+		// })
+		$(document).on('click','input[type="checkbox"]',function(){
+			$(this).parent().hide(2000)
+		})
+		$('#button').click(function(){
+   window.location.href='file:///C:/Users/cheun/Downloads/newtabhow2use.html';
+})
+	</script>
+	<h2 id="dailybullet">Scroll down to see Daily Bulletin</h2>
+	<img width="200"src="https://cdn.discordapp.com/attachments/798396670239834153/886966303351504917/PngItem_102087.png" alt="arrow pointing down" id="arrowshoot">
+
+	<iframe src="https://docs.google.com/a/hkugac.edu.hk/document/d/1coA5enQ9m7-oK7atZHX56L0BCbF-2RrkhGtd5hHvt_Q/edit?usp=sharing" width="1200" height="1200"></iframe> 
+
+</body>
+</html>
